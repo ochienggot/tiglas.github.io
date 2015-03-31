@@ -1,10 +1,10 @@
-title:            "@muanchiou"
-url:              http://muan.co
+title:            "@an_G0T"
+url:              http://nicholasgot.com
 permalink:        pretty
 highlighter:      pygments
 markdown:         kramdown
 google_analytics: UA-21332781-7
-timezone:         Europe/London
+timezone:         Europe/Stockholm
 gems:
   - jemoji
   - jekyll-mentions

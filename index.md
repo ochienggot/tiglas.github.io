@@ -2,21 +2,17 @@
 layout: about
 ---
 
-**Mu-An Chiou**<br />
-Designer at [GitHub](https://github.com/about), co-founder of [Zeczec](http://zeczec.com).
+**Nicholas Got**<br />
+Student at [Uppsala University], not a co-founder yet.
 
-Currently traveling from Taipei.
+On a Scandinavian adventure, from Kenya.
 
 ---
 
 <div class="links">
-<a href="https://github.com/muan" target="_blank">GitHub</a>
+<a href="https://github.com/Tiglas" target="_blank">GitHub</a>
 
-<a href="https://twitter.com/muanchiou" target="_blank">Twitter</a>
-
-<a href="http://dribbble.com/muan" target="_blank">Dribbble</a>
-
-<a href="http://speakerdeck.com/muan" target="_blank">Speakerdeck</a>
+<a href="https://twitter.com/an_G0T" target="_blank">Twitter</a>
 
 <a href="/feed.xml" target="_blank">Blog feed</a>
 </div>
