@@ -3,7 +3,7 @@ layout: about
 ---
 
 **Nicholas Got**<br />
-Student at [Uppsala University], not a co-founder yet.
+Student at Uppsala University, a future Co-founder.
 
 On a Scandinavian adventure, from Kenya.
 
