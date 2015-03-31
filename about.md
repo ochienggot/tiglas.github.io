@@ -5,8 +5,11 @@ permalink: /about/
 ---
 
 Not particularly remarkable, but perhaps this will change in due course.
+
+
 ### More Information
-Some more here.
+
+Hopefully some more info will appear here.
 
 
 ### Contact me
