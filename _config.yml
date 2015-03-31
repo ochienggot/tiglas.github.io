@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #
 # This file contains configuration flags to customize your site
 #
@@ -72,3 +73,7 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
+=======
+name: Nicholas Got
+markdown: kramdown
+>>>>>>> 9d833cc004920a756afc6bcec1cb7593ca34acd9
