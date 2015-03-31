@@ -1,17 +1,43 @@
----
-layout: default
----
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <div class="wrapper">
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+      {% include header.html %}
 
-  <div class="entry">
-    {{ content }}
-  </div>
+      <section class="content">
+        <div class="container">
+          <article>
+            <header class="post-header">
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+              <div class="post-title">{{ page.title }}</div>
+              {% if page.date %}
+                <small class="meta">
+                  {{ page.date | date_to_string }} -
+                  by <a href="https://twitter.com/muanchiou" target="_blank">@muanchiou</a>
+                </small>
+                <div class="pagination">
+                  {% if page.previous %}
+                    <a class="page-nav previous" {% if page.previous %}href="{{ page.previous.url }}" id="js-previous-post"{% endif %}>
+                      &lt;
+                    </a>
+                  {% endif %}
+                  {% if page.next %}
+                    <a class="page-nav next" {% if page.next %}href="{{ page.next.url }}" id="js-next-post"{% endif %}>
+                      &gt;
+                    </a>
+                  {% endif %}
+                </div>
+              {% endif %}
+            </header>
+            {{ content }}
+          </article>
+        </div>
+      </section>
 
-  {% include disqus.html %}
-</article>
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
