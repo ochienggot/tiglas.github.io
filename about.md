@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 Not particularly remarkable, but perhaps this will change in due course.
-![Just me]({{ site.url }}/images/me.jpg)
+![uu]({{ site.url }}/images/uu.JPG)
 
 
 ### More Information
