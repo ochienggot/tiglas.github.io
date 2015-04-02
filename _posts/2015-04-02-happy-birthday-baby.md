@@ -7,5 +7,6 @@ This is the first post on this website and time has so willed that today is my b
 
 Thank you for all the moments we have shared - I've learnt a lot from you and I can unequivocally say that you've made me a better man. You are an amazing person, and while circumstances have seen to it that for the second time, we don't get to celebrate the birthday together, I'd like wish you many happy days ahead - full of smiles and laughter. And Sunday love.
 
-Happy Birthday 
+Happy Birthday
+
 ![Sheri]({{site.baseurl}}/images/sheri.png)
