@@ -4,11 +4,11 @@ layout: about
 <!-- ![me]({{site.baseurl}}/images/nick2.png) -->
 **Nicholas Got**<br />
 
-Currently a student in Scandinavia.
+I'm a computer engineer by training, with experience in telecommunications.
 
-An eclectic collection of my random experiences reside [here]({{ site.baseurl }}/archive).
+Currently a student in Scandinavia, an eclectic collection of my random experiences reside [here]({{ site.baseurl }}/archive).
 
-From Kenya.
+Kenyan.
 
 ---
 
