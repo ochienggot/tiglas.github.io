@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ochieng'</title>
+    <description></description>
+    <link>http://nicholasgot.com</link>
+    <atom:link href="http://nicholasgot.com/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Happy Cake Day!</title>
+        <description>&lt;p&gt;This is the first post on this website and time has so willed that today is my baby’s birthday. I wanted to take a moment to say how much of a blessing you have been to me. Looking back, not even in my wildest imaginations would I have exptected a chance meeting in a petrol station to turn out quite like it has. See, I had to turn back and follow you after you had passed me, while pretending to be headed in the same direction as you were. Thankfully, the noise coming from the nearby garage ensured that my increased heartbeats did not expose my nervousness…or at least that’s what I assumed. In the end, it was well worth it.&lt;/p&gt;
+
+&lt;p&gt;Thank you for all the moments we have shared - I’ve learnt a lot from you and I can unequivocally say that I’ve become a better man since you came into my life. You are an amazing person, and while circumstances forbid us from celebrating the birthday together, I’d like to wish you many happy days ahead; full of smiles and laughter. And Sunday love.&lt;/p&gt;
+
+&lt;p&gt;Happy Birthday&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sheri.png&quot; alt=&quot;Sheri&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Apr 2015 00:00:00 +0200</pubDate>
+        <link>http://nicholasgot.com/2015/04/02/happy-birthday-baby/</link>
+        <guid isPermaLink="true">http://nicholasgot.com/2015/04/02/happy-birthday-baby/</guid>
+      </item>
+    
+      <item>
+        <title>Up and running.</title>
+        <description>&lt;p&gt;Under construction…&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 31 Mar 2015 00:00:00 +0200</pubDate>
+        <link>http://nicholasgot.com/2015/03/31/start/</link>
+        <guid isPermaLink="true">http://nicholasgot.com/2015/03/31/start/</guid>
+      </item>
+    
+  </channel>
+</rss>

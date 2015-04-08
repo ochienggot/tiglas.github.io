@@ -3,7 +3,7 @@ url:              http://nicholasgot.com
 permalink:        pretty
 highlighter:      pygments
 markdown:         kramdown
-google_analytics: UA-21332781-7
+google_analytics: UA-61679422-1
 timezone:         Europe/Stockholm
 gems:
   - jemoji
