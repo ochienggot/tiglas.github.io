@@ -7,11 +7,11 @@
     <atom:link href="http://nicholasgot.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Welcome Spring</title>
+        <title>Välkommen spring</title>
         <description>&lt;p&gt;Winter is gone, spring is finally here! The weather is good, the sun 
 lifting the gloom off most people’s faces. Seeing snow for the fist time
-was definitely exciting, but spring weather is way more benign.  Here are 
-some pictures I’ve taken in the time I’ve been here:&lt;/p&gt;
+was definitely exciting, but spring weather is way more benign. Here are 
+some pictures I’ve taken over the course of last autumn:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;em&gt;Uppsala cathedral&lt;/em&gt;: tall, imposing buiding with great architecture. Visible from most parts of
@@ -21,7 +21,7 @@ the city.&lt;/li&gt;
 &lt;!--ncludes/image.html --&gt;
 &lt;div class=&quot;image-wrapper&quot;&gt; 
      
-        &lt;img src=&quot;/images/cathedral.JPG&quot; alt=&quot;cathedral&quot; /&gt; 
+        &lt;img src=&quot;/images/cathedral.jpg&quot; alt=&quot;cathedral&quot; /&gt; 
          
      
     &lt;p class=&quot;image-caption&quot;&gt;Uppsala domkyrka&lt;/p&gt; 
@@ -79,7 +79,7 @@ literally translates to “mouth of the beehive”.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;
-5. &lt;strong&gt;Valkommen till Eklundshof&lt;/strong&gt;&lt;br /&gt;
+5. &lt;strong&gt;Välkommen till Eklundshof&lt;/strong&gt;&lt;br /&gt;
 Swedish isn’t very hard to pick up, right?&lt;/p&gt;
 
 &lt;!--ncludes/image.html --&gt;
@@ -91,6 +91,8 @@ Swedish isn’t very hard to pick up, right?&lt;/p&gt;
     &lt;p class=&quot;image-caption&quot;&gt;The  way home&lt;/p&gt; 
      
 &lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;!--ncludes/image.html --&gt;
 &lt;div class=&quot;image-wrapper&quot;&gt; 

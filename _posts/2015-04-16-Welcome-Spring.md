@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Welcome Spring
+title: Välkommen spring
 ---
 Winter is gone, spring is finally here! The weather is good, the sun 
 lifting the gloom off most people's faces. Seeing snow for the fist time
-was definitely exciting, but spring weather is way more benign.  Here are 
-some pictures I've taken in the time I've been here:
+was definitely exciting, but spring weather is way more benign. Here are 
+some pictures I've taken over the course of last autumn:
 
 1. <em>Uppsala cathedral</em>: tall, imposing buiding with great architecture. Visible from most parts of
 the city.
 
-{% include image.html img="images/cathedral.JPG" title="cathedral" caption="Uppsala domkyrka" %}
+{% include image.html img="images/cathedral.jpg" title="cathedral" caption="Uppsala domkyrka" %}
 
 <br/>
 2. <em>Flustret</em>: one of the first places our guide took us to. As he pointed out, flustret 
@@ -31,9 +31,11 @@ literally translates to "mouth of the beehive".
 {% include image.html img="images/fyris.jpg" title="river fyris" caption="Fyris river" %}
 
 <br/>
-5. __Valkommen till Eklundshof__  
+5. __Välkommen till Eklundshof__  
 Swedish isn't very hard to pick up, right?
 
 {% include image.html img="images/eklushofsvagen.jpg" title="eklunds" caption="The  way home" %}
+
+<br/>
 
 {% include image.html img="images/eklunds.jpg" title="eklunds2" caption="My adopted home" %}
