@@ -7,6 +7,108 @@
     <atom:link href="http://nicholasgot.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Welcome Spring</title>
+        <description>&lt;p&gt;Winter is gone, spring is finally here! The weather is good, the sun 
+lifting the gloom off most people’s faces. Seeing snow for the fist time
+was definitely exciting, but spring weather is way more benign.  Here are 
+some pictures I’ve taken in the time I’ve been here:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;em&gt;Uppsala cathedral&lt;/em&gt;: tall, imposing buiding with great architecture. Visible from most parts of
+the city.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!--ncludes/image.html --&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/cathedral.JPG&quot; alt=&quot;cathedral&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;Uppsala domkyrka&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+2. &lt;em&gt;Flustret&lt;/em&gt;: one of the first places our guide took us to. As he pointed out, flustret 
+literally translates to “mouth of the beehive”.&lt;/p&gt;
+
+&lt;!--ncludes/image.html --&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/flustret.jpg&quot; alt=&quot;flustret&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;Flustret&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;!--ncludes/image.html --&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/flustret2.jpg&quot; alt=&quot;flustret2&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;Another view of Flustret&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+3. &lt;em&gt;Wild ducks&lt;/em&gt;: one never fails to notice the ducks in the pond next to Flustret. They disappear during winter and reappear around spring.&lt;/p&gt;
+
+&lt;!--ncludes/image.html --&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/ducks.jpg&quot; alt=&quot;ducks&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;Ducks&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+4. &lt;em&gt;Fyris river&lt;/em&gt; flows right through the city centre.&lt;/p&gt;
+
+&lt;!--ncludes/image.html --&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/fyris.jpg&quot; alt=&quot;river fyris&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;Fyris river&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+5. &lt;strong&gt;Valkommen till Eklundshof&lt;/strong&gt;&lt;br /&gt;
+Swedish isn’t very hard to pick up, right?&lt;/p&gt;
+
+&lt;!--ncludes/image.html --&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/eklushofsvagen.jpg&quot; alt=&quot;eklunds&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;The  way home&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;!--ncludes/image.html --&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/eklunds.jpg&quot; alt=&quot;eklunds2&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;My adopted home&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+</description>
+        <pubDate>Thu, 16 Apr 2015 00:00:00 +0200</pubDate>
+        <link>http://nicholasgot.com/2015/04/16/Welcome-Spring/</link>
+        <guid isPermaLink="true">http://nicholasgot.com/2015/04/16/Welcome-Spring/</guid>
+      </item>
+    
+      <item>
         <title>♯147notjustanumber</title>
         <description>&lt;!--ncludes/image.html --&gt;
 &lt;div class=&quot;image-wrapper&quot;&gt; 
@@ -24,7 +126,7 @@ the hopes and aspirations of
 their families (and sometimes whole communities). For the innocent victims of this
 most inhuman attack, their lives is the heavy price our nation had to pay in failing to provide  adequate
 security to its citizens. They were our sisters, brothers, sons, daughters, cousins, uncles, relatives and friends. 
-They’re not just 147 people: they’ve got names and we honour their memory &lt;a href=&quot;https://twitter.com/search?q=%23147notjustanumber&amp;amp;src=tyah&quot; target=&quot;_blank&quot;&gt;#147notjustanumber&lt;/a&gt;.&lt;/p&gt;
+They’re not just 147 people: they’ve got names and we honour their memory &lt;a href=&quot;https://twitter.com/search?q=%23147notjustanumber&amp;amp;src=tyah&quot; targe=&quot;_blank&quot;&gt;#147notjustanumber&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Apr 2015 00:00:00 +0200</pubDate>
         <link>http://nicholasgot.com/2015/04/09/%23147notjustanumber/</link>
