@@ -1,0 +1,71 @@
+[
+
+  
+    {
+      "title"			: "A tale of two cities",
+      "link"			: "/blog/A-Tale-Of-Two-Cities/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Välkommen spring",
+      "link"			: "/blog/Welcome-Spring/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "♯147notjustanumber",
+      "link"			: "/blog/%23147notjustanumber/",
+      "excerpt"		: ""
+    }
+  
+
+
+
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "About me",
+      "link"			: "/about/",
+      "excerpt"		: "More info."
+    }
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "Theme Setup",
+      "link"			: "/theme-setup/",
+      "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
+    }
+  
+
+  
+
+  
+    ,{
+      "title"			: "Projects undertaken",
+      "link"			: "/projects/",
+      "excerpt"		: "some of the projects I've been involved with"
+    }
+  
+
+  
+
+  
+
+  
+
+]
