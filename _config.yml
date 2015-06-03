@@ -5,7 +5,7 @@ locale: en_UK
 description: Personal website of a Kenyan adventurer 
 logo: site-logo-new.jpg
 search: true
-url: http://nicholasgot.com
+//url: http://nicholasgot.com
 
 # Jekyll configuration
 
@@ -43,7 +43,7 @@ owner:
   instagram: #username
   google:
     plus: kcingot
-    analytics: 61679422-1
+    analytics: UA-61679422-1
     verify:
     ad-client:
     ad-slot:
