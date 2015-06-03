@@ -32,7 +32,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Site owner
 owner:
   name: Ochieng'  Got
-  avatar: pic-yangu-1.jpg
+  #avatar: pic-yangu-1.jpg removed my pic
   email: kcingot@gmail.com
   disqus-shortname:
   twitter: an_G0T
