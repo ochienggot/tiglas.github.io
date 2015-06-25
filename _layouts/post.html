@@ -31,7 +31,7 @@
           <img src="{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
         {% else %}
         <!--Commented out author image -->
-          <!--img src="{{ site.url }}/images/{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"--></a>
+          <img src="{{ site.url }}/images/{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
         {% endif %}
         <span class="author vcard">By <span class="fn">{{ author.name }}</span></span>
         <span class="entry-date date published"><time datetime="{{ page.date | date_to_xmlschema }}"><i class="fa fa-calendar-o"></i> {{ page.date | date: "%B %d, %Y" }}</time></span>

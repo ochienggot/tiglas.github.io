@@ -6,7 +6,7 @@ categories: blog
 excerpt:
 tags: []
 image:
-  feature: florence-1.png
+  feature:
 date: 2015-05-14T00:36:20+02:00
 ---
 

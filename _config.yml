@@ -1,9 +1,9 @@
 # Site wide configuration
 
-title: "Nicholas Got" 
+title: 
 locale: en_UK
-description: Personal website of a Kenyan adventurer 
-logo: site-logo-new.jpg
+description:  
+logo: slogo.gif
 search: true
 url: http://nicholasgot.com
 
@@ -31,8 +31,8 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Ochieng'  Got
-  avatar:
+  name: Got
+  avatar: site-logo-new.jpg 
   email: kcingot@gmail.com
   disqus-shortname:
   twitter: an_G0T
