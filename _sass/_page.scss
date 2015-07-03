@@ -20,19 +20,14 @@
 /* feature image */
 
 .entry-feature-image {
-	//margin: 20px 0 0;
-	//width: 100%;
-	//@include media($medium) {
-	//	margin-top: -75px; /* move up to be overlapped by site logo */
-	//}
-	//@include media($large) {
-		//margin-top: -145px; /* move up further to be overlapped by site logo */
-	//}
-    float: left;
-    width: 105px;
-    margin: 0px auto;
-    text-align: center;
-    padding: 40px 0px;
+	margin: 20px 0 0;
+	width: 100%;
+	@include media($medium) {
+		margin-top: -75px; /* move up to be overlapped by site logo */
+	}
+	@include media($large) {
+		margin-top: -145px; /* move up further to be overlapped by site logo */
+	}
 }
 //.image-wrapper {
     //float: left;
