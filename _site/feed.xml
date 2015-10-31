@@ -4,13 +4,48 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2015-09-21T00:12:26+02:00</updated>
+<updated>2015-10-31T23:01:02+01:00</updated>
 <id>/</id>
 <author>
   <name>Got</name>
   <uri>/</uri>
   <email>kcingot@gmail.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Homecoming pt.2]]></title>
+  <link rel="alternate" type="text/html" href="/blog/homecoming-pt-2/" />
+  <id>/blog/homecoming-pt-2</id>
+  <published>2015-10-31T22:12:18+01:00</published>
+  <updated>2015-10-31T22:12:18+01:00</updated>
+  <author>
+    <name>Got</name>
+    <uri></uri>
+    <email>kcingot@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Looking back on my visit back home last August, I have learnt to appreciate the little things we often take for granted.
+Family, friends, experiences, name them. It was especially humbling when my sister invariably asked what food I had missed most so she would prepare it for me. Now, by my recollection, she always cooked chapati on Christmas. Hers are simply the best chapatis I have
+ever had the pleasure of eating. And so she made me some: I savored the taste of love in every one of them. This is one of the things that I will
+always remember. She gave me the gift of an early Christmas.&lt;/p&gt;
+
+&lt;!--includes/image.html--&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/chapo.jpg&quot; alt=&quot;chapati&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;Chapo, baked with a sister&#39;s love&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;/blog/homecoming-pt-2/&quot;&gt;Homecoming pt.2&lt;/a&gt; was originally published by Got at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on October 31, 2015.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
