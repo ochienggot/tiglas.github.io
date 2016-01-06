@@ -1,9 +1,9 @@
 # Site wide configuration
 
-title: 
+title:
 locale: en_UK
 description:  
-logo: nick-logo.png
+logo: nicholasgot.png
 search: true
 url: http://nicholasgot.com
 
