@@ -4,13 +4,275 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2015-10-31T23:01:02+01:00</updated>
+<updated>2016-04-17T23:51:27+02:00</updated>
 <id>/</id>
 <author>
   <name>Got</name>
   <uri>/</uri>
   <email>kcingot@gmail.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Floating Point Arithmetic]]></title>
+  <link rel="alternate" type="text/html" href="/articles/floating-point-arithmetic/" />
+  <id>/articles/floating-point-arithmetic</id>
+  <published>2016-04-17T19:17:56+02:00</published>
+  <updated>2016-04-17T19:17:56+02:00</updated>
+  <author>
+    <name>Got</name>
+    <uri></uri>
+    <email>kcingot@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;My first time digging around floating piont arithmetic invariably led me to the paper &lt;a href=&quot;https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html&quot;&gt;&lt;em&gt;What Every Computer Scientist Should Know About Floating-Point Arithmetic&lt;/em&gt;, by David Goldberg&lt;/a&gt;. I found the paper a great read, but I’ll admit I had to go through several re-reads and references from other sources to finally grasp its contents. In this post, I give a much more gentle treatment of floating point arithmetic, inspired by one of the best books I have had the &lt;a href=&quot;http://www.amazon.com/dp/0735611319/?tag=rorg-20&quot;&gt;pleasure of reading&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A natural place to start off is to look at the subset of numbers called whole numbers (referred to as integers by computer programmers) and rational numbers. Numbers such as 20, 3442 and 9992400 fall into the former category whereas 3/4, 1/3 and 7/30 are in the latter one. Rational numbers are expressed as a ratio of two whole numbers and can be equivalently expressed in fractional form - 3/4 is 0.75 for instance. The representation is depicted below:&lt;/p&gt;
+
+&lt;p&gt;0.75 = 1x10&lt;sup&gt;0&lt;/sup&gt; + 7x10&lt;sup&gt;-1&lt;/sup&gt; + 5x10&lt;sup&gt;-2&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Digits to the left of the decimal point are multiplied by positive powers of 10 while those to the right are multiplied by negative powers of 10.
+Even so, some rational numbers are not easy to represent, such as 1/3, whose fractional form is 0.3333333333…, a never-ending stream of 3’s. On the other hand, irrational numbers (such as √2) do not a repeating fractional sequence.
+The scientific notation is very useful for representing very large and small numbers. Expressed in this notation, the number 490,000,000 = 4.9 x 10&lt;sup&gt;11&lt;/sup&gt; and 0.0000000026 = 2.6 x 10&lt;sup&gt;-10&lt;/sup&gt;. The notation provides a standardized format for numbers - in these examples, 4.9 and 2.6 are the fractional part or significand, the exponent is the power to which 10 is raised.&lt;/p&gt;
+
+&lt;p&gt;Computers represent numbers in binary form, sequences of 1’s and 0’s. Floating point notation is based on the scientific notation, which we have examined for decimal numbers. So how do we represent fractional numbers in binary? Just like in the decimal number system, a binary point is used, with significand bits to the left of the binary point multiplied by negative powers of 2 and those to the right positive powers of 2. Concretely, 101.1101 is expressed as&lt;/p&gt;
+
+&lt;p&gt;1x2&lt;sup&gt;2&lt;/sup&gt; +
+0x2&lt;sup&gt;1&lt;/sup&gt; +
+1x2&lt;sup&gt;0&lt;/sup&gt; +
+1x2&lt;sup&gt;-1&lt;/sup&gt; +
+1x2&lt;sup&gt;-2&lt;/sup&gt; +
+0x2&lt;sup&gt;-3&lt;/sup&gt; +
+1x2&lt;sup&gt;-4&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;which is 5.8125 in decimal. In binary scientific notation, the number 101.1101 is written as 1.011101x2&lt;sup&gt;2&lt;/sup&gt;, with the normalized significand greater than or equal to 1 but less than 2. This has the implication that the left of the decimal point in a significand always has a 1 in a normalized binary floating-point number.&lt;/p&gt;
+
+&lt;p&gt;Most computers support &lt;em&gt;IEEE Standard for Binary Floating-Point Arithmetic&lt;/em&gt;, which defines single precision (requiring 4 bytes) and double precision (requiring 8 bytes) formats. The main advantage of floating-point representation over fixed-point representation is the ability to represent numbers of vastly differing magnitudes, from the radius of an atom to the distance from the earth to the sun. The precision of floating-point representation will have a bearing on how numbers are represented and the results of ensuing arithmetic operations. Single precision floating-point numbers have a 24-bit representation. What this means is that numbers differing by less than 1 part in 2&lt;sup&gt;24&lt;/sup&gt; will have the same representation. Represented as single precision floating-point numbers, 16,777,216 and 16,777,217 are identical. This may, or may not be an issue but it is something the programmer ought to be aware of. Adding a very large floating-point number to a very small one or comparing two floating-point numbers may produce surprising results too. As such, one needs to be careful when writing programs that operate on floating-point numbers. One technique for instance involves sorting the numbers to be added and performing the addition in increasing order of size to ensure that small numbers reflect in the final result. Instead of comparing two floating-point numbers for equality, one can instead determine if the difference between them is less than some threshold value and base control logic on this. For instance&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+if (float1 == float2)
+# Do something
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;becomes&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+epsilon = 1.0*10^-8
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+if (abs(float1 - float2) &amp;lt; epsilon)
+# Do something
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Further reading&lt;/p&gt;
+
+&lt;p&gt;What Every Computer Scientist Should Know About Floating-Point Arithmetic &lt;a href=&quot;https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html&quot;&gt;https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html&lt;/a&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;/articles/floating-point-arithmetic/&quot;&gt;Floating Point Arithmetic&lt;/a&gt; was originally published by Got at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on April 17, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[How to Find a Pizzeria in Copenhagen]]></title>
+  <link rel="alternate" type="text/html" href="/blog/how-to-find-a-pizzeria-in-denmark/" />
+  <id>/blog/how-to-find-a-pizzeria-in-denmark</id>
+  <published>2016-02-28T20:54:43+01:00</published>
+  <updated>2016-02-28T20:54:43+01:00</updated>
+  <author>
+    <name>Got</name>
+    <uri></uri>
+    <email>kcingot@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Last week I visited Copenhagen some good friends of mine. It was one of those things that I didn’t really take time to think about, but rather decided to go on the spur of the moment. A perfect way to spend a weekend as it turned out.
+My first taste of Danish food was in the form brunch for which we had to brave the elements to get to. As I soon discovered, the food was great and the buffet offered a healthy variety. Having had our fill, we began exploring the city like good old tourists do, with the exception that we were accompanied by our two Danish friends. The city art museum quite stood out for me: the art on display magnificently explored human history and culture. We found time to visit the Little Mermaid and I have to admit it produced little excitement in me, perhaps due to my lack of acquintance with the works of $AUTHOR. As the day wore on, we decided to have dinner at a nearby pizzeria, the subject of this story. And so began an evening of pizza, good conversation and laughter. It was also one of my friend’s birthday too. After dinner, jetlag began our lack of sleep began to show and we were simply too tired to go out (the best laid plans of men and mice). 
+The hostel I stayed in wasn’t exactly heavenly, but it was fine. I got a little shock though as one of the guys sharing the room burst in and asked in very colorful language “whoever took his wallet to return, just the wallet, ‘cos he didn’t need the money” as he couldn’t go home as a result. No one answered, except for a few sleepy stares. I set out the following day to find the pizzeria we had been to the previous day. So I took the map only to realize that
+I couldn’t remember the name (I usually go straight for the pizza and skip the pizzeria names). I asked the friends who were with me, but none could remember the name despite being vaguely aware of the location within the City. But then I really needed to go back to that pizzeria. So with a map, I set out to retrace our steps from last night. However, I remembered that we took bus 3A and one of our other friends took bus 5A at the same bus stop. And then boom!
+it hit me that I could actually trace my way by looking for the location on the map where bus 3A and 5A shared a road segment. I hopped onto bus 350S and asked the burly driver where I should drop off, but his reply was dismissively “I can’t help you young man, use your phone” while laughing. Having listened to my ordeal, an old man in the same bus came and asked where I wanted go. He was old, his steps considered and his vision far from perfect. But he asked me to tell him the name of the street I wanted to go to. $STREETNAME I said. Granted, my Danish isn’t great, but after several repititions he was able to get where I wanted to go. And so he gave me small tour of the city as we rode the bus, pointing out historical artefacts and tourist attractions all the while promising that he will show me where to alight. And show me did, even going further to point at with his fingers while smiling. The gesture was so touching.
+It took me a short while to locate the place. And then I explained to the waiter why I was there. And ordered another pizza. Which was good. The city of Copenhagen has a lot more to offer than merely pizza.
+The people actually talk in buses, offer to help and share seats in buses. less earphones/headphones too. Beautiful Copenhagen&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/blog/how-to-find-a-pizzeria-in-denmark/&quot;&gt;How to Find a Pizzeria in Copenhagen&lt;/a&gt; was originally published by Got at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on February 28, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[A Trip to Laplands, Kiruna]]></title>
+  <link rel="alternate" type="text/html" href="/blog/a-trip-to-laplands-kiruna/" />
+  <id>/blog/a-trip-to-laplands-kiruna</id>
+  <published>2016-01-31T23:39:12+01:00</published>
+  <updated>2016-01-31T23:39:12+01:00</updated>
+  <author>
+    <name>Got</name>
+    <uri></uri>
+    <email>kcingot@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;!--includes/image.html--&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/arrival.jpg&quot; alt=&quot;Sundsvall&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;Sundsvall: changeover&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;!--includes/image.html--&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/xmas.jpg&quot; alt=&quot;cathedral&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;Christmas had arrived&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;!--includes/image.html--&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/kiruna1.jpg&quot; alt=&quot;cathedral&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;Rocket in Kiruna town&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;!--includes/image.html--&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/kiruna2.jpg&quot; alt=&quot;cathedral&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;One of the oldest churches in Sweden&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;!--includes/image.html--&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/road.jpg&quot; alt=&quot;cathedral&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;Road to adventure&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;!--includes/image.html--&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/icehotel1.jpg&quot; alt=&quot;Ice hotel&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;Ice hotel: under construction&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;!--includes/image.html--&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/icehotel2.jpg&quot; alt=&quot;cathedral&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;Ice hotel: heaps of snice&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;!--includes/image.html--&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/icebar.jpg&quot; alt=&quot;cathedral&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;What&#39;s in a glass?&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;!--includes/image.html--&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/aurora.jpg&quot; alt=&quot;cathedral&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;The Northern lights finally showed up&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;!--includes/image.html--&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/kiruna3.jpg&quot; alt=&quot;cathedral&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;Breathtaking landscape&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;!--includes/image.html--&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/kiruna4.jpg&quot; alt=&quot;cathedral&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;The architecture can&#39;t escape you&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+&lt;!--includes/image.html--&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt; 
+     
+        &lt;img src=&quot;/images/back_to_uppsala.jpg&quot; alt=&quot;cathedral&quot; /&gt; 
+         
+     
+    &lt;p class=&quot;image-caption&quot;&gt;Back to Uppsala&lt;/p&gt; 
+     
+&lt;/div&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;/blog/a-trip-to-laplands-kiruna/&quot;&gt;A Trip to Laplands, Kiruna&lt;/a&gt; was originally published by Got at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on January 31, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[A Happy Year 2015]]></title>
+  <link rel="alternate" type="text/html" href="/blog/a-happy-year-2015/" />
+  <id>/blog/a-happy-year-2015</id>
+  <published>2015-12-31T18:39:59+01:00</published>
+  <updated>2015-12-31T18:39:59+01:00</updated>
+  <author>
+    <name>Got</name>
+    <uri></uri>
+    <email>kcingot@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;The past year has been an amazing journey for me, most of which I have spent in a foreign country. This invariably comes with it’s own
+challenges, but the opportunities it has presented have been immense too. My initial trepidation about leaving family, friends and
+a not-too-shabby job to pursue
+further studies has mostly been displaced by a sense that it has all been worth it. I have had the chance to meet people
+from different parts of the world, make new friends, travel quite a bit (I should do more of this) and form networks
+that hopefully will outlast my stay in Sweden.&lt;/p&gt;
+
+&lt;p&gt;And so to godsent friends like Dicle, who’ve made my stay interesting and thankfully offered a sneak peek into the bright future…a wholehearted thank you. &lt;/p&gt;
+
+&lt;p&gt;To baby - &lt;em&gt;kwendete mono&lt;/em&gt;. And to 2016,
+more of the same!&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/blog/a-happy-year-2015/&quot;&gt;A Happy Year 2015&lt;/a&gt; was originally published by Got at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on December 31, 2015.&lt;/p&gt;
+  </content>
+</entry>
 
 
   

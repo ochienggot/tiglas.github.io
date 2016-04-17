@@ -5,7 +5,7 @@ locale: en_UK
 description:  
 logo: nicholasgot.png
 search: true
-url: http://nicholasgot.com
+#url: http://nicholasgot.com
 
 # Jekyll configuration
 
@@ -34,13 +34,10 @@ owner:
   name: Got
   avatar: site-logo-new.jpg 
   email: kcingot@gmail.com
-  disqus-shortname:
   twitter: an_G0T
-  facebook: #username
-  github: #username
+  github: tiglas
   stackexchange: #http://stackoverflow.com/users/123456/username
   linkedin: nicholasgot
-  instagram: #username
   google:
     plus: kcingot
     analytics: UA-61679422-1

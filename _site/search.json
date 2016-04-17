@@ -2,6 +2,38 @@
 
   
     {
+      "title"			: "Floating Point Arithmetic",
+      "link"			: "/articles/floating-point-arithmetic/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "How to Find a Pizzeria in Copenhagen",
+      "link"			: "/blog/how-to-find-a-pizzeria-in-denmark/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "A Trip to Laplands, Kiruna",
+      "link"			: "/blog/a-trip-to-laplands-kiruna/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "A Happy Year 2015",
+      "link"			: "/blog/a-happy-year-2015/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "Homecoming pt.2",
       "link"			: "/blog/homecoming-pt-2/",
       "excerpt"		: ""
@@ -73,6 +105,16 @@
   
 
   
+
+  
+    ,{
+      "title"			: "Projects",
+      "link"			: "/projects/",
+      "excerpt"		: "some of the projects I've been involved with"
+    }
+  
+
+  
     ,{
       "title"			: "About me",
       "link"			: "/about/",
@@ -82,24 +124,6 @@
 
   
 
-  
-
-  
-    ,{
-      "title"			: "Theme Setup",
-      "link"			: "/theme-setup/",
-      "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
-    }
-  
-
-  
-
-  
-    ,{
-      "title"			: "Projects",
-      "link"			: "/projects/",
-      "excerpt"		: "some of the projects I've been involved with"
-    }
   
 
   

@@ -10,19 +10,20 @@ image:
 ---
 <!-- ![me]({{site.baseurl}}/images/nick2.png) -->
 
-I'm currently a Masters Computer Science student at Uppsala university, graduating in June 2016. I previously worked as a Billing engineer at Safaricom.
+I am a Master's student in Computer Science at Uppsala university. I previously worked as a System engineer at Safaricom.
 <!--<span title="Linkedin profile">More <a href="https://www.linkedin.com/in/nicholasgot" rel="nofollow">
 here</a>.</span>-->
 
 </> Programming skills
 
 * Fluent in Python and Java
-* I also have some exposure to C/C++
+* C/C++ (prior experience)
 * Bash scripting
+* Android programming (beginner)
 
 What do I do in my free time?
 
-* Personal projects, the latest being a toy web crawler implementation in Java. GitHub: <a href="https://github.com/Tiglas"> tiglas </a>. 
+* I like learning new technologies. I am currently picking up Android programming by building applications. I have recently built a popular movies app. These side projects are hosted on Github: <a href="https://github.com/Tiglas"> tiglas </a>. 
 * Languages intrigue me a lot - I'm currently learning [survival] Swedish. 
 * I am a member of <a href="http://www.v-dala.se/association/samba-sao-miguel/"> Samba São Miguel</a> where I get to practise my
 rather awkward dance moves.
