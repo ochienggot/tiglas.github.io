@@ -9,6 +9,7 @@ image:
   feature:
 date: 2016-04-17T19:17:56+02:00
 ---
+
 My first time digging around floating piont arithmetic invariably led me to the paper [_What Every Computer Scientist Should Know About Floating-Point Arithmetic_, by David Goldberg][1]. I found the paper a great read, but I'll admit I had to go through several re-reads and references from other sources to finally grasp its contents. In this post, I give a much more gentle treatment of floating point arithmetic, inspired by one of the best books I have had the [pleasure of reading].
 
 A natural place to start off is to look at the subset of numbers called whole numbers (referred to as integers by computer programmers) and rational numbers. Numbers such as 20, 3442 and 9992400 fall into the former category whereas 3/4, 1/3 and 7/30 are in the latter one. Rational numbers are expressed as a ratio of two whole numbers and can be equivalently expressed in fractional form - 3/4 is 0.75 for instance. The representation is depicted below:
