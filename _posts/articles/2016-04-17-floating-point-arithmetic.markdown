@@ -2,7 +2,7 @@
 layout: post
 title: "Floating Point Arithmetic"
 modified:
-categories: articles
+categories: blog
 excerpt:
 tags: []
 image:
