@@ -35,7 +35,7 @@ which is 5.8125 in decimal. In binary scientific notation, the number 101.1101 i
 Most computers support _IEEE Standard for Binary Floating-Point Arithmetic_, which defines single precision (requiring 4 bytes) and double precision (requiring 8 bytes) formats. The main advantage of floating-point representation over fixed-point representation is the ability to represent numbers of vastly differing magnitudes, from the radius of an atom to the distance from the earth to the sun. The precision of floating-point representation will have a bearing on how numbers are represented and the results of ensuing arithmetic operations. Single precision floating-point numbers have a 24-bit representation. What this means is that numbers differing by less than 1 part in 2<sup>24</sup> will have the same representation. Represented as single precision floating-point numbers, 16,777,216 and 16,777,217 are identical. This may, or may not be an issue but it is something the programmer ought to be aware of. Adding a very large floating-point number to a very small one or comparing two floating-point numbers may produce surprising results too. As such, one needs to be careful when writing programs that operate on floating-point numbers. One technique for instance involves sorting the numbers to be added and performing the addition in increasing order of size to ensure that small numbers reflect in the final result. Instead of comparing two floating-point numbers for equality, one can instead determine if the difference between them is less than some threshold value and base control logic on this. For instance
 
 ```
-if (float1 == float2):
+if (float_num1 == float_num2):
     # Do something
 ```
 
@@ -43,7 +43,7 @@ becomes
 
 ```
 epsilon = 1.0*10^-8
-if (abs(float1 - float2) < epsilon):
+if (abs(float_num1 - float_num2) < epsilon):
     # Do something
 ```
 
