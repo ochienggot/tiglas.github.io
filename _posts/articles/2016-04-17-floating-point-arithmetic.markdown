@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Floating Point Arithmetic"
+title: "Floating Point Arithmetic "
 modified:
 categories: articles
 excerpt:

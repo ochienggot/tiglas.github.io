@@ -5,15 +5,15 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title></title>
+<title>Data analysis in Awk &#8211; </title>
 
-
+<meta name="keywords" content="">
 
 
 <!--![site logo](/images/site-logo-new.jpg)-->
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="">
+<meta name="twitter:title" content="Data analysis in Awk">
 
 <meta name="twitter:site" content="@an_G0T">
 <meta name="twitter:creator" content="@an_G0T">
@@ -24,16 +24,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_UK">
 <meta property="og:type" content="article">
-<meta property="og:title" content="">
+<meta property="og:title" content="Data analysis in Awk">
 
-<meta property="og:url" content="/">
+<meta property="og:url" content="/articles/data-analysis-in-awk/">
 <meta property="og:site_name" content="">
 
 
 
 
 
-<link rel="canonical" href="/">
+<link rel="canonical" href="/articles/data-analysis-in-awk/">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title=" Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -75,7 +75,7 @@
 
 </head>
 
-<body id="page">
+<body id="post">
 
 <div class="navigation-wrapper">
 	<nav role="navigation" id="site-nav" class="animated drop">
@@ -121,25 +121,65 @@
 
 
 <div id="main" role="main">
-  <article class="entry">
+  <article class="hentry">
     
     <div class="entry-wrapper">
       <header class="entry-header">
-        <h1 class="entry-title"></h1>
+        <span class="entry-tags"></span>
+        
+          <h1 class="entry-title">Data analysis in Awk</h1>
+        
       </header>
+      <footer class="entry-meta">
+        
+        
+        
+        <!--Commented out author image -->
+          <img src="/images/site-logo-new.jpg" class="bio-photo" alt="Got bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Got</span></span>
+        <span class="entry-date date published"><time datetime="2016-06-18T20:37:17+02:00"><i class="fa fa-calendar-o"></i> June 18, 2016</time></span>
+        
+        
+        
+        
+      </footer>
       <div class="entry-content">
-        <div style="text-align:center"><img src="images/firenze.jpg"/></div> 
+        <p>I recently encountered a problem that required writing a script to parse and analyze log data and output aggregated statistics.
+The parsing goals included opening a file containing syslog data, finding all lines containing a specific pattern and extracting values corresponding to specific entries from the lines. The result of the analysis was supposed to be the totals for each of the values.</p>
 
-<br>
+<p>My gut reaction was that this is the kind of problem in which Awk excels: finding patterns in text and analyzing file contents. While working out the solution, I came to reflect on the powerful features of Awk such as associative arrays: a data structure that I had previously used many times without giving much thought. Associative arrays in Awk are like normal arrays, except that they can be indexed with strings.</p>
 
-<ul class="post-list">
-     
-      <li>New: <article><a href="/articles/data-analysis-in-awk/">Data analysis in Awk <span class="entry-date"><time datetime="2016-06-18T20:37:17+02:00">June 18, 2016</time></span></a></article></li>
-    
-</ul>
+<p>For illustration purposes, assume we have a syslog file with lines that look like this</p>
 
+<p><code>
+application=http original=632 terminal=1607
+</code></p>
+
+<p>We want to add all the “original” and “terminal” values corresponding to each application. Awk arrays allow us to neatly express this as</p>
+
+<p><code>
+original[$1] += $2
+terminal[$1] += $3
+</code></p>
+
+<p>It does the proper initialization when <code>$1</code> is not present in the <code>original</code> and <code>terminal</code> arrays. Accessing array elements is achieved through a simple loop</p>
+
+<p><code>
+for (val in array)
+</code></p>
+
+<p>The complete solution is in <a href="https://github.com/Tiglas/syslog-analysis">this Github repository</a>. For comparison, I implemented the solution in Python as well.</p>
+
+        
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="/articles/floating-point-arithmetic/" class="btn" title="Floating Point Arithmetic ">Previous</a>
+      
+      
+    </nav><!-- /.pagination -->
   </article>
 </div><!-- /#main -->
 

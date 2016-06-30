@@ -2,7 +2,15 @@
 
   
     {
-      "title"			: "Floating Point Arithmetic",
+      "title"			: "Data analysis in Awk",
+      "link"			: "/articles/data-analysis-in-awk/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Floating Point Arithmetic ",
       "link"			: "/articles/floating-point-arithmetic/",
       "excerpt"		: ""
     }
