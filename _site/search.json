@@ -2,6 +2,22 @@
 
   
     {
+      "title"			: "Building a Pickup Planner System",
+      "link"			: "/articles/pickup-planner-system-using-clustering-and-answer-set-programming/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Pickup Planner System Using Clustering and Answer Set Programming",
+      "link"			: "/pickup-planner-system-using-clustering-and-answer-set-programming/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "Data analysis in Awk",
       "link"			: "/articles/data-analysis-in-awk/",
       "excerpt"		: ""

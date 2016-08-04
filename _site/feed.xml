@@ -4,13 +4,65 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-07-01T00:32:54+02:00</updated>
+<updated>2016-08-04T13:47:25+02:00</updated>
 <id>/</id>
 <author>
   <name>Got</name>
   <uri>/</uri>
   <email>kcingot@gmail.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Building a Pickup Planner System]]></title>
+  <link rel="alternate" type="text/html" href="/articles/pickup-planner-system-using-clustering-and-answer-set-programming/" />
+  <id>/articles/pickup-planner-system-using-clustering-and-answer-set-programming</id>
+  <published>2016-08-04T13:06:58+02:00</published>
+  <updated>2016-08-04T13:06:58+02:00</updated>
+  <author>
+    <name>Got</name>
+    <uri></uri>
+    <email>kcingot@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Since the turn of the year, I have been working on my thesis project at Ericsson. The project involves building a pickup
+planner system that can be used by Fleet Management companies to provide transportation services to smart city dwellers.
+The project has been a very interesting and challenging undertaking. Working with industry stakeholders has afforded me the opportunity to learn lots of stuff along the way. I intend to do a technical deep dive into the project on completion: the implementation was done using Answer Set Programming and clustering techniques. &lt;/p&gt;
+
+&lt;p&gt;A prototype implementation of the sytem is in the demo videos below:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/t9nj6SlXHRY&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/jnqwlJrJ_VI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/articles/pickup-planner-system-using-clustering-and-answer-set-programming/&quot;&gt;Building a Pickup Planner System&lt;/a&gt; was originally published by Got at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on August 04, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Pickup Planner System Using Clustering and Answer Set Programming]]></title>
+  <link rel="alternate" type="text/html" href="/pickup-planner-system-using-clustering-and-answer-set-programming/" />
+  <id>/pickup-planner-system-using-clustering-and-answer-set-programming</id>
+  <published>2016-08-04T13:06:35+02:00</published>
+  <updated>2016-08-04T13:06:35+02:00</updated>
+  <author>
+    <name>Got</name>
+    <uri></uri>
+    <email>kcingot@gmail.com</email>
+  </author>
+  <content type="html">
+    
+
+    &lt;p&gt;&lt;a href=&quot;/pickup-planner-system-using-clustering-and-answer-set-programming/&quot;&gt;Pickup Planner System Using Clustering and Answer Set Programming&lt;/a&gt; was originally published by Got at &lt;a href=&quot;&quot;&gt;&lt;/a&gt; on August 04, 2016.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
@@ -97,19 +149,16 @@ The scientific notation is very useful for representing very large and small num
 &lt;p&gt;Most computers support &lt;em&gt;IEEE Standard for Binary Floating-Point Arithmetic&lt;/em&gt;, which defines single precision (requiring 4 bytes) and double precision (requiring 8 bytes) formats. The main advantage of floating-point representation over fixed-point representation is the ability to represent numbers of vastly differing magnitudes, from the radius of an atom to the distance from the earth to the sun. The precision of floating-point representation will have a bearing on how numbers are represented and the results of ensuing arithmetic operations. Single precision floating-point numbers have a 24-bit representation. What this means is that numbers differing by less than 1 part in 2&lt;sup&gt;24&lt;/sup&gt; will have the same representation. Represented as single precision floating-point numbers, 16,777,216 and 16,777,217 are identical. This may, or may not be an issue but it is something the programmer ought to be aware of. Adding a very large floating-point number to a very small one or comparing two floating-point numbers may produce surprising results too. As such, one needs to be careful when writing programs that operate on floating-point numbers. One technique for instance involves sorting the numbers to be added and performing the addition in increasing order of size to ensure that small numbers reflect in the final result. Instead of comparing two floating-point numbers for equality, one can instead determine if the difference between them is less than some threshold value and base control logic on this. For instance&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;
-if (float1 == float2)
-# Do something
+if (float_num1 == float_num2):
+    # Do something
 &lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;becomes&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;
 epsilon = 1.0*10^-8
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;
-if (abs(float1 - float2) &amp;lt; epsilon)
-# Do something
+if (abs(float_num1 - float_num2) &amp;lt; epsilon):
+    # Do something
 &lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Further reading&lt;/p&gt;
