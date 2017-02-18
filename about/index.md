@@ -10,7 +10,7 @@ image:
 ---
 <!-- ![me]({{site.baseurl}}/images/nick2.png) -->
 
-I am a Master's student in Computer Science at Uppsala university, currently undertaking my thesis project at Ericsson. I previously worked as a System engineer at Safaricom.
+I am a Software Developer at Netlight. I previously worked as a System engineer at Safaricom.
 <!--<span title="Linkedin profile">More <a href="https://www.linkedin.com/in/nicholasgot" rel="nofollow">
 here</a>.</span>-->
 
