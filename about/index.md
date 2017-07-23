@@ -10,7 +10,7 @@ image:
 ---
 <!-- ![me]({{site.baseurl}}/images/nick2.png) -->
 
-I am a Software Developer at Netlight. I previously worked as a System engineer at Safaricom.
+I am a Backend engineer at Spotify.
 <!--<span title="Linkedin profile">More <a href="https://www.linkedin.com/in/nicholasgot" rel="nofollow">
 here</a>.</span>-->
 
